@@ -30,6 +30,11 @@ try:
     for game in games:
         # تنظيف الرابط (تحويل ./ الى /)
         link = game.get('link', '').replace('./', '/')
+        
+        # التأكد من أن الرابط يبدأ بـ / لضمان دمج صحيح مع base_url
+        if not link.startswith('/'):
+            link = '/' + link
+            
         xml_content += f"""  <url>
     <loc>{base_url}{link}</loc>
     <lastmod>{date_today}</lastmod>
@@ -40,6 +45,7 @@ except Exception as e:
     print(f"Error loading games_data_ready.json: {e}")
 
 # 4. إضافة الصفحات القانونية (اختياري ولكنه مفيد للسيو)
+# تأكد من أن هذه الصفحات موجودة فعلاً في موقعك، وإلا يمكنك حذف هذا الجزء
 for page in ['/privacy.html', '/terms.html', '/contact.html']:
     xml_content += f"""  <url>
     <loc>{base_url}{page}</loc>
