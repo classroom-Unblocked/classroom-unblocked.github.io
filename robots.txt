@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://classroom-unblocked.github.io/sitemap.xml
