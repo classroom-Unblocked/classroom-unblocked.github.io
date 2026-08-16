@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Games Unblocked | Play Free Unblocked Games for School</title>
+    <meta name="description" content="Play the best Classroom Games Unblocked for free! No blocks, no downloads.">
+    <script src="https://cdn.tailwindcss.com"></script>
+	
+	<!-- 🚀 SEO Schema: WebSite (ليعرف جوجل اسم موقعك الرسمي وتخصصه) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Classroom Games Unblocked",
+      "alternateName": "Unblocked Games for School",
+      "url": "https://your-website.com/",
+      "description": "Play the best Classroom Games Unblocked for free! No blocks, no downloads."
+    }
+    </script>
+
+    <!-- 🚀 SEO Schema: CollectionPage (ليعرف جوجل أن هذه الصفحة عبارة عن قائمة ألعاب) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Classroom Games Unblocked",
+      "description": "Browse and play the best unblocked games online."
+    }
+    </script>
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- 1. القائمة الجانبية (Sidebar) -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/70 z-40 hidden transition-opacity" onclick="toggleSidebar()"></div>
+    <div id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-gray-950 z-50 transform -translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto border-r border-gray-800">
+        <div class="p-6 border-b border-gray-800 flex justify-between items-center">
+            <h2 class="text-xl font-bold text-blue-400">Categories</h2>
+            <button onclick="toggleSidebar()" class="text-gray-400 hover:text-white text-3xl leading-none">&times;</button>
+        </div>
+        <ul class="p-4 space-y-2">
+            <li><a href="./index.html" class="block p-3 rounded-lg hover:bg-gray-800 transition">🏠 Home (All Games)</a></li>
+            <li><a href="./t/arcade/index.html" class="block p-3 rounded-lg hover:bg-gray-800 transition">🕹️ Arcade</a></li>
+            <li><a href="./t/car/index.html" class="block p-3 rounded-lg hover:bg-gray-800 transition">🏎️ Car & Racing</a></li>
+            <li><a href="./t/sports/index.html" class="block p-3 rounded-lg hover:bg-gray-800 transition">⚽ Sports</a></li>
+            <li><a href="./t/puzzle/index.html" class="block p-3 rounded-lg hover:bg-gray-800 transition">🧩 Puzzle</a></li>
+            <li><a href="./t/io-games/index.html" class="block p-3 rounded-lg hover:bg-gray-800 transition">🌐 IO Games</a></li>
+        </ul>
+    </div>
+
+    <div class="max-w-7xl mx-auto flex-grow w-full p-4 md:p-8">
+        
+        <!-- الهيدر: زر القائمة + العنوان + شريط البحث -->
+        <header class="bg-gray-800 p-4 rounded-2xl mb-8 flex flex-col md:flex-row justify-between items-center shadow-lg gap-4 border border-gray-700">
+            <div class="flex items-center gap-4 w-full md:w-auto">
+                <button onclick="toggleSidebar()" class="p-2 text-gray-300 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg focus:outline-none transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+                <h1 class="text-2xl md:text-3xl font-extrabold text-blue-400 tracking-tight">
+                    Classroom Games
+                </h1>
+            </div>
+            
+            <div class="w-full md:w-1/3 relative">
+                <input type="text" id="searchInput" placeholder="Search for a game..." class="w-full bg-gray-900 border border-gray-600 text-white rounded-full py-2.5 px-5 pl-12 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition">
+                <svg class="w-5 h-5 absolute left-4 top-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+        </header>
+
+        <!-- رسالة عدم وجود نتائج -->
+        <div id="noResults" class="hidden text-center text-gray-400 py-12 text-lg">
+            No games found. Try a different search! 😔
+        </div>
+
+        <!-- شبكة الألعاب -->
+        <div id="gamesGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-12">
+            
+            <a href="./golf-bit/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="golf bit">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/609/golf-bit-unblocked-cg.webp" alt="Golf Bit" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Golf Bit</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Sports</span>
+                </div>
+            </a>
+            
+            <a href="./cluster-rush/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="cluster rush">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/608/cluster-rush-unblocked-cg.webp" alt="Cluster Rush" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Cluster Rush</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./velocity-rush/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="velocity rush">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/607/velocity-rush-unblocked-cg.webp" alt="Velocity Rush" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Velocity Rush</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./snaker-io/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="snaker io">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/606/snaker-io-unblocked-cg.webp" alt="Snaker io" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Snaker io</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Snake</span>
+                </div>
+            </a>
+            
+            <a href="./jungle-mart/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="jungle mart">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/605/jungle-mart-unblocked-cg.webp" alt="Jungle Mart" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Jungle Mart</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Simulator</span>
+                </div>
+            </a>
+            
+            <a href="./geometry-vector/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="geometry vector">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/604/geometry-vector-unblocked-cg.webp" alt="Geometry Vector" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Geometry Vector</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./run-3-nova/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="run 3 nova">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/602/CG-Run3-Reezenova.webp" alt="Run 3 Nova" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Run 3 Nova</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./steal-brainrot-heist/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="steal brainrot heist">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/601/CG-Steal-Brainrot-Heist.webp" alt="Steal Brainrot Heist" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Steal Brainrot Heist</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">3D</span>
+                </div>
+            </a>
+            
+            <a href="./backflip-challenge/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="backflip challenge">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/603/backflip-challenge-cg-3.webp" alt="Backflip Challenge" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Backflip Challenge</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Skill</span>
+                </div>
+            </a>
+            
+            <a href="./run-3/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="run 3">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/584/Run-3-Unblocked-2.webp" alt="Run 3" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Run 3</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Racing</span>
+                </div>
+            </a>
+            
+            <a href="./steal-brainrot-duel/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="steal brainrot duel">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/600/steal-brainrot-unblocked.webp" alt="Steal Brainrot Duel" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Steal Brainrot Duel</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">3D</span>
+                </div>
+            </a>
+            
+            <a href="./chess/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="chess">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/599/Chess-Unblocked.webp" alt="Chess" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Chess</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Strategy</span>
+                </div>
+            </a>
+            
+            <a href="./papas-cheeseria/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="papa's cheeseria">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/588/Papas-Cheeseria-Unblocked.webp" alt="Papa's Cheeseria" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Papa's Cheeseria</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Papa's</span>
+                </div>
+            </a>
+            
+            <a href="./papas-sushiria/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="papa's sushiria">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/589/Papas-Sushiria-Unblocked-2.webp" alt="Papa's Sushiria" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Papa's Sushiria</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Papa's</span>
+                </div>
+            </a>
+            
+            <a href="./bffs-black-friday-collection/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="bffs black friday collection">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/590/BFF-Black-Friday-Collection-Unblocked.webp" alt="BFFs Black Friday Collection" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">BFFs Black Friday Collection</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Girl</span>
+                </div>
+            </a>
+            
+            <a href="./papas-scooperia/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="papa's scooperia">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/594/Papas-Scooperia-Unblocked.webp" alt="Papa's Scooperia" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Papa's Scooperia</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Papa's</span>
+                </div>
+            </a>
+            
+            <a href="./papas-hot-doggeria/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="papa's hot doggeria">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/587/Papas-Hot-Doggeria-Unblocked.webp" alt="Papa's Hot Doggeria" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Papa's Hot Doggeria</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Papa's</span>
+                </div>
+            </a>
+            
+            <a href="./papas-donuteria/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="papa's donuteria">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/596/Papas-Donuteria-Unblocked.webp" alt="Papa's Donuteria" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Papa's Donuteria</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Papa's</span>
+                </div>
+            </a>
+            
+            <a href="./papas-wingeria/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="papa's wingeria">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/597/Papas-Wingeria-Unblocked.webp" alt="Papa's Wingeria" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Papa's Wingeria</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Papa's</span>
+                </div>
+            </a>
+            
+            <a href="./fast-food-manager/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="fast food manager">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/598/FastFood-Manager-Unblocked.webp" alt="Fast Food Manager" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Fast Food Manager</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Simulator</span>
+                </div>
+            </a>
+            
+            <a href="./papas-bakeria/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="papa's bakeria">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/595/Papas-Bakeria-Unblocked.webp" alt="Papa's Bakeria" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Papa's Bakeria</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Papa's</span>
+                </div>
+            </a>
+            
+            <a href="./snow-rider-3d/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="snow rider 3d">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/570/snow-rider-3d-classroom.webp" alt="Snow Rider 3D" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Snow Rider 3D</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Skill</span>
+                </div>
+            </a>
+            
+            <a href="./basketball-stars/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="basketball stars">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/449/Basketball-Stars-512x512.jpg" alt="Basketball Stars" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Basketball Stars</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Basketball</span>
+                </div>
+            </a>
+            
+            <a href="./tap-tap-shots/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="tap tap shots">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/406/tap-tap-shots-512.jpg" alt="Tap Tap Shots" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Tap Tap Shots</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Sports</span>
+                </div>
+            </a>
+            
+            <a href="./moto-x3m/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="moto x3m">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/448/Moto-X3M-Original-512x512.jpg" alt="Moto X3M" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Moto X3M</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Bike</span>
+                </div>
+            </a>
+            
+            <a href="./highway-traffic/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="highway traffic">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/32/HighwayTraffic512.jpg" alt="Highway Traffic" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Highway Traffic</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Car</span>
+                </div>
+            </a>
+            
+            <a href="./drift-hunters-2024/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="drift hunters 2024">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/444/drift-hunters-2024-freezenova.jpg" alt="Drift Hunters 2024" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Drift Hunters 2024</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Drift</span>
+                </div>
+            </a>
+            
+            <a href="./block-blast/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="block blast">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/558/Block-Blast.jpg" alt="Block Blast" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Block Blast</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Puzzle</span>
+                </div>
+            </a>
+            
+            <a href="./drift-hunters/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="drift hunters">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/443/drift-hunters-game.jpg" alt="Drift Hunters" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Drift Hunters</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Drift</span>
+                </div>
+            </a>
+            
+            <a href="./love-tester/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="love tester">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/152/test.jpg" alt="Love Tester" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Love Tester</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Kids</span>
+                </div>
+            </a>
+            
+            <a href="./real-flight-simulator/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="real flight simulator">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/335/512.jpg" alt="Real Flight Simulator" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Real Flight Simulator</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Simulator</span>
+                </div>
+            </a>
+            
+            <a href="./geometry-escape/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="geometry escape">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/560/Geometry-Escape.jpg" alt="Geometry Escape" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Geometry Escape</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Escape</span>
+                </div>
+            </a>
+            
+            <a href="./archer-hero/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="archer hero">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/346/512-2.jpg" alt="Archer Hero" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Archer Hero</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Action</span>
+                </div>
+            </a>
+            
+            <a href="./friday-night-funkin-fnf/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="friday night funkin (fnf)">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/447/friday-night-funkin-unblocked.jpg" alt="Friday Night Funkin (FNF)" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Friday Night Funkin (FNF)</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">2D</span>
+                </div>
+            </a>
+            
+            <a href="./capy-clicker/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="capy clicker">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/576/Capy-Clicker-Unblocked.webp" alt="Capy Clicker" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Capy Clicker</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Clicker</span>
+                </div>
+            </a>
+            
+            <a href="./fast-food-rush/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="fast food rush">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/573/fast_food_rush_game.webp" alt="Fast Food Rush" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Fast Food Rush</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Idle</span>
+                </div>
+            </a>
+            
+            <a href="./football-legends/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="football legends">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/521/Football-Legends-game.webp" alt="Football Legends" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Football Legends</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Sports</span>
+                </div>
+            </a>
+            
+            <a href="./moto-x3m-spooky-land/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="moto x3m spooky land">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/455/Moto-X3M-Halloween-512x512.jpg" alt="Moto X3M Spooky Land" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Moto X3M Spooky Land</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Bike</span>
+                </div>
+            </a>
+            
+            <a href="./worlds-hardest-game/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="world's hardest game">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/550/worlds-hardest-game.webp" alt="World's Hardest Game" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">World's Hardest Game</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Flash</span>
+                </div>
+            </a>
+            
+            <a href="./moto-x3m-winter/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="moto x3m winter">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/457/Moto-X3M-Winter-512x512.jpg" alt="Moto X3M Winter" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Moto X3M Winter</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Bike</span>
+                </div>
+            </a>
+            
+            <a href="./police-chase-drifter/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="police chase drifter">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/155/512.jpg" alt="Police Chase Drifter" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Police Chase Drifter</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Driving</span>
+                </div>
+            </a>
+            
+            <a href="./geometry-dash-freezenova/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="geometry dash freezenova">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/415/geometry-dash-freezenova.jpg" alt="Geometry Dash FreezeNova" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Geometry Dash FreezeNova</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Escape</span>
+                </div>
+            </a>
+            
+            <a href="./spacebar-clicker/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="spacebar clicker">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/497/spacebark-clicker.webp" alt="Spacebar Clicker" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Spacebar Clicker</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Clicker</span>
+                </div>
+            </a>
+            
+            <a href="./bloxorz/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="bloxorz">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/474/bloxorz-game.jpg" alt="Bloxorz" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Bloxorz</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Puzzle</span>
+                </div>
+            </a>
+            
+            <a href="./moto-x3m-pool-party/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="moto x3m pool party">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/452/Moto-X3M-Pool-Party-512x512.jpg" alt="Moto X3M Pool Party" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Moto X3M Pool Party</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Bike</span>
+                </div>
+            </a>
+            
+            <a href="./car-football/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="car football">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/351/car-football-unblocked-game.jpg" alt="Car Football" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Car Football</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">2D</span>
+                </div>
+            </a>
+            
+            <a href="./drift-rider/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="drift rider">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/428/drift-rider.jpg" alt="Drift Rider" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Drift Rider</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Drift</span>
+                </div>
+            </a>
+            
+            <a href="./geometry-dash-scratch/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="geometry dash scratch">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/394/512.jpg" alt="Geometry Dash Scratch" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Geometry Dash Scratch</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Escape</span>
+                </div>
+            </a>
+            
+            <a href="./stackballio/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="stackball.io">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/51/stack.jpg" alt="StackBall.io" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">StackBall.io</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./learn-to-fly-3/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="learn to fly 3">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/514/learn-to-fly-3-unblocked.webp" alt="Learn To Fly 3" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Learn To Fly 3</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./edys-car-simulator/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="edys car simulator">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/238/512-2.jpg" alt="Edys Car Simulator" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Edys Car Simulator</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Car</span>
+                </div>
+            </a>
+            
+            <a href="./drift-king/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="drift king">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/510/drift-king.webp" alt="Drift King" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Drift King</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Drift</span>
+                </div>
+            </a>
+            
+            <a href="./cookie-clicker/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="cookie clicker">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/578/Cookie-Clicker-Unblocked.webp" alt="Cookie Clicker" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Cookie Clicker</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Clicker</span>
+                </div>
+            </a>
+            
+            <a href="./tennis-masters/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="tennis masters">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/454/tennis-masters-512.jpg" alt="Tennis Masters" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Tennis Masters</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Sports</span>
+                </div>
+            </a>
+            
+            <a href="./state-io-wars/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="state io wars">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/498/state-io-wars.webp" alt="State io Wars" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">State io Wars</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Strategy</span>
+                </div>
+            </a>
+            
+            <a href="./madalin-stunt-cars-pro/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="madalin stunt cars pro">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/349/512.jpg" alt="Madalin Stunt Cars Pro" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Madalin Stunt Cars Pro</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Car</span>
+                </div>
+            </a>
+            
+            <a href="./crazy-karts/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="crazy karts">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/535/crazy-karts-game.webp" alt="Crazy Karts" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Crazy Karts</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">io Games</span>
+                </div>
+            </a>
+            
+            <a href="./farming-island/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="farming island">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/571/farming_island_game.webp" alt="Farming Island" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Farming Island</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Adventure</span>
+                </div>
+            </a>
+            
+            <a href="./duck-life-4/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="duck life 4">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/538/duck-life-4-unity.webp" alt="Duck Life 4" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Duck Life 4</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Unity</span>
+                </div>
+            </a>
+            
+            <a href="./survival-karts/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="survival karts">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/557/Survival-Karts.jpg" alt="Survival Karts" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Survival Karts</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Car</span>
+                </div>
+            </a>
+            
+            <a href="./papas-freezeria/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="papa's freezeria">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/580/Papas-Freezeria-Unblocked.webp" alt="Papa's Freezeria" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Papa's Freezeria</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Papa's</span>
+                </div>
+            </a>
+            
+            <a href="./learn-to-fly-2/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="learn to fly 2">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/512/learn-to-fly-2.webp" alt="Learn To Fly 2" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Learn To Fly 2</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./neon-war/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="neon war">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/450/neon-war.jpg" alt="Neon War" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Neon War</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./learn-to-fly-idle/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="learn to fly idle">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/516/learn-to-fly-idle.webp" alt="Learn To Fly Idle" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Learn To Fly Idle</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Idle</span>
+                </div>
+            </a>
+            
+            <a href="./motorbike-traffic/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="motorbike traffic">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/186/512-2.jpg" alt="Motorbike Traffic" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Motorbike Traffic</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Driving</span>
+                </div>
+            </a>
+            
+            <a href="./basketball-io/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="basketball io">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/302/512.jpg" alt="Basketball io" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Basketball io</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./flappy-bird/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="flappy bird">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/577/Flappy-Bird-Unblocked.webp" alt="Flappy Bird" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Flappy Bird</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Clicker</span>
+                </div>
+            </a>
+            
+            <a href="./stunt-simulator-multiplayer/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="stunt simulator multiplayer">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/179/512.jpg" alt="Stunt Simulator Multiplayer" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Stunt Simulator Multiplayer</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Car</span>
+                </div>
+            </a>
+            
+            <a href="./police-traffic/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="police traffic">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/187/512-2.jpg" alt="Police Traffic" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Police Traffic</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Driving</span>
+                </div>
+            </a>
+            
+            <a href="./draw-the-bridge/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="draw the bridge">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/164/512-2.jpg" alt="Draw The Bridge" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Draw The Bridge</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./gigga-io/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="gigga io">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/528/gigga-io.webp" alt="Gigga io" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Gigga io</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">io Games</span>
+                </div>
+            </a>
+            
+            <a href="./stack-fire-ball/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="stack fire ball">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/184/512.jpg" alt="Stack Fire Ball" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Stack Fire Ball</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./uno-online/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="uno online">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/331/512-2.jpg" alt="UNO Online" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">UNO Online</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Puzzle</span>
+                </div>
+            </a>
+            
+            <a href="./slidepark-io/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="slidepark.io">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/87/Slide-io-512x512.jpeg" alt="SlidePark.io" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">SlidePark.io</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">io Games</span>
+                </div>
+            </a>
+            
+            <a href="./egg-helix/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="egg helix">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/41/helix.jpg" alt="Egg Helix" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Egg Helix</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Arcade</span>
+                </div>
+            </a>
+            
+            <a href="./fancy-pants-2/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="fancy pants 2">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/537/fancy-pants-2.webp" alt="Fancy Pants 2" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Fancy Pants 2</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Adventure</span>
+                </div>
+            </a>
+            
+            <a href="./hero-dragon-power/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="hero dragon power">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/345/512-2.jpg" alt="Hero Dragon Power" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Hero Dragon Power</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">2D</span>
+                </div>
+            </a>
+            
+            <a href="./stunt-rider/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="stunt rider">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/484/stunt-rider.webp" alt="Stunt Rider" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Stunt Rider</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Car</span>
+                </div>
+            </a>
+            
+            <a href="./hero-rush-tower-defense/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="hero rush tower defense">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/333/512.jpg" alt="Hero Rush Tower Defense" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Hero Rush Tower Defense</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Strategy</span>
+                </div>
+            </a>
+            
+            <a href="./2048/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="2048">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/565/2048.jpg" alt="2048" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">2048</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Puzzle</span>
+                </div>
+            </a>
+            
+            <a href="./watermelon-game/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="watermelon game">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/566/Watermelon-Game.jpg" alt="Watermelon Game" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Watermelon Game</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">2D</span>
+                </div>
+            </a>
+            
+            <a href="./soccer-random-pro/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="soccer random pro">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/569/Soccer-Random-Pro.jpg" alt="Soccer Random Pro" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Soccer Random Pro</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Sports</span>
+                </div>
+            </a>
+            
+            <a href="./pixelmon-town/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="pixelmon town">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/572/pixelmon_town_game.webp" alt="Pixelmon Town" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Pixelmon Town</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Minecraft</span>
+                </div>
+            </a>
+            
+            <a href="./doggo-clicker/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="doggo clicker">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/475/doggo-clicker-unblocked.jpg" alt="Doggo Clicker" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Doggo Clicker</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Clicker</span>
+                </div>
+            </a>
+            
+            <a href="./subway-idle-3d/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="subway idle 3d">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/328/512.jpg" alt="Subway Idle 3D" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Subway Idle 3D</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Idle</span>
+                </div>
+            </a>
+            
+            <a href="./drift-hunters-pro/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="drift hunters pro">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/357/512-2.jpg" alt="Drift Hunters Pro" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Drift Hunters Pro</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Drift</span>
+                </div>
+            </a>
+            
+            <a href="./crazy-car-arena/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="crazy car arena">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/317/512-1-2.jpg" alt="Crazy Car Arena" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Crazy Car Arena</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Driving</span>
+                </div>
+            </a>
+            
+            <a href="./fire-and-water/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="fire and water">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/353/512.jpg" alt="Fire and Water" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Fire and Water</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">2 Player</span>
+                </div>
+            </a>
+            
+            <a href="./penalty-king/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="penalty king">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/547/penalty-king.webp" alt="Penalty King" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Penalty King</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Sports</span>
+                </div>
+            </a>
+            
+            <a href="./super-car-driving/" class="game-card bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300 block group" data-title="super car driving">
+                <div class="relative h-40 overflow-hidden">
+                    <img src="./media/posts/562/Super-Car-Driving.jpg" alt="Super Car Driving" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-sm font-bold truncate text-gray-100 group-hover:text-blue-400">Super Car Driving</h3>
+                    <span class="inline-block mt-2 text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded-full border border-gray-600">Car</span>
+                </div>
+            </a>
+            
+        </div>
+
+        <!-- أزرار تقليب الصفحات -->
+        <div id="pagination" class="flex justify-center items-center gap-4 mb-12 hidden">
+            <button id="prevBtn" onclick="changePage(-1)" class="px-5 py-2 bg-gray-800 border border-gray-700 text-white rounded-lg hover:bg-blue-600 hover:border-blue-500 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                &larr; Prev
+            </button>
+            <span id="pageInfo" class="text-gray-300 font-medium">Page 1 of X</span>
+            <button id="nextBtn" onclick="changePage(1)" class="px-5 py-2 bg-gray-800 border border-gray-700 text-white rounded-lg hover:bg-blue-600 hover:border-blue-500 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                Next &rarr;
+            </button>
+        </div>
+
+        <!-- مقال السيو الطويل الاحترافي (يظهر في الصفحة الرئيسية فقط) -->
+        
+        <article class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-2xl mt-16 mb-8 border border-gray-700 text-gray-300">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-400 mb-6">Why Classroom Games Unblocked is the Best Choice for Students</h2>
+            
+            <div class="space-y-6 leading-relaxed text-lg">
+                <p>
+                    It was an ordinary day at school until the students of Room 204 discovered <strong>Classroom Games Unblocked</strong>. Boredom quickly turned into excitement as they realized they could access fun, educational, and completely <strong>unblocked games for school</strong> directly on their laptops and tablets without any restrictions.
+                </p>
+
+                <h3 class="text-2xl font-bold text-white mt-8 mb-4">Safe, Fun, and Educational</h3>
+                <p>
+                    We prioritize the safety of our players above everything else. Our platform is 100% <strong>safe and nonviolent</strong>, making it the perfect environment for students of all ages. Parents and teachers can rest easy knowing that our games are carefully selected to be free from inappropriate content. Plus, you don’t need to worry about account creation or software installations—just click and play!
+                </p>
+
+                <h3 class="text-2xl font-bold text-white mt-8 mb-4">Bypass Restrictions with Ease</h3>
+                <p>
+                    School and university network administrators often block entertainment sites. However, <strong>Classroom Games</strong> provides reliable, <strong>free unblocked access</strong> to a vast library of titles. Whether you are searching for <em>Run 3 unblocked</em>, <em>Friday Night Funkin</em>, or classic puzzle games, our website is optimized to ensure you never hit a "blocked" page again.
+                </p>
+
+                <h3 class="text-2xl font-bold text-white mt-8 mb-4">A Diverse and Growing Library</h3>
+                <p>
+                    Our library is a living platform, constantly updated with fresh titles based on your feedback. From <strong>mobile-friendly unblocked games</strong> that you can play on your phone to complex strategy games, our collection is designed for everyone. Enjoy effortless browsing, fast loading times, and a clean, distraction-free display.
+                </p>
+            </div>
+        </article>
+        
+
+    </div> <!-- نهاية الـ max-w-7xl -->
+
+    <!-- تذييل الصفحة (Footer) المضاف من أجل الـ SEO والثقة -->
+   <footer class="bg-gray-950 text-center py-8 mt-auto border-t border-gray-800 w-full">
+        <div class="flex justify-center gap-6 mb-4 text-gray-400 text-sm md:text-base">
+            <a href="./privacy.html" class="hover:text-blue-400 transition">Privacy Policy</a>
+            <a href="./terms.html" class="hover:text-blue-400 transition">Terms of Use</a>
+            <a href="./contact.html" class="hover:text-blue-400 transition">Contact Us</a>
+        </div>
+        <p class="text-gray-500 text-sm">&copy; 2026 Classroom Games Unblocked. All rights reserved.</p>
+    </footer>
+
+    <!-- السكريبتات الخاصة بالبحث والقائمة وتقليب الصفحات -->
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+        }
+
+        const games = Array.from(document.querySelectorAll('.game-card'));
+        const gamesPerPage = 20;
+        let currentPage = 1;
+        let filteredGames = games;
+
+        function renderGames() {
+            games.forEach(game => game.style.display = 'none');
+            const startIndex = (currentPage - 1) * gamesPerPage;
+            const endIndex = startIndex + gamesPerPage;
+            const gamesToShow = filteredGames.slice(startIndex, endIndex);
+            gamesToShow.forEach(game => game.style.display = 'block');
+            document.getElementById('noResults').style.display = filteredGames.length === 0 ? 'block' : 'none';
+            updatePagination();
+        }
+
+        function updatePagination() {
+            const totalPages = Math.ceil(filteredGames.length / gamesPerPage);
+            document.getElementById('pageInfo').innerText = `Page ${currentPage} of ${totalPages || 1}`;
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages || totalPages === 0;
+            const paginationEl = document.getElementById('pagination');
+            if (totalPages > 1) {
+                paginationEl.style.display = 'flex';
+                paginationEl.classList.remove('hidden');
+            } else {
+                paginationEl.style.display = 'none';
+            }
+        }
+
+        function changePage(direction) {
+            currentPage += direction;
+            renderGames();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase().trim();
+            filteredGames = games.filter(game => {
+                const title = game.getAttribute('data-title');
+                return title.includes(query);
+            });
+            currentPage = 1;
+            renderGames();
+        });
+
+        renderGames();
+    </script>
+</body>
+</html>
