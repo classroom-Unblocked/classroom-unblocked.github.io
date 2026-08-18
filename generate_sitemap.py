@@ -1,0 +1,65 @@
+
+import json
+from datetime import datetime
+
+# رابط موقعك الأساسي (بدون علامة / في النهاية)
+base_url = "https://classroom-unblocked.github.io"
+
+# تاريخ اليوم لكي يعرف جوجل أن الموقع مُحدث
+date_today = datetime.now().strftime("%Y-%m-%d")
+
+print("Generating sitemap.xml...")
+
+# 1. بداية ملف الـ XML
+xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
+xml_content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+
+# 2. إضافة الصفحة الرئيسية
+xml_content += f"""  <url>
+    <loc>{base_url}/</loc>
+    <lastmod>{date_today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>\n"""
+
+# 3. قراءة ملف بيانات الألعاب
+try:
+    with open('games_data_ready.json', 'r', encoding='utf-8') as f:
+        games = json.load(f)
+        
+    # إضافة رابط كل لعبة للخريطة
+    for game in games:
+        # تنظيف الرابط (تحويل ./ الى /)
+        link = game.get('link', '').replace('./', '/')
+        
+        # التأكد من أن الرابط يبدأ بـ / لضمان دمج صحيح مع base_url
+        if not link.startswith('/'):
+            link = '/' + link
+            
+        xml_content += f"""  <url>
+    <loc>{base_url}{link}</loc>
+    <lastmod>{date_today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>\n"""
+except Exception as e:
+    print(f"Error loading games_data_ready.json: {e}")
+
+# 4. إضافة الصفحات القانونية (اختياري ولكنه مفيد للسيو)
+# تأكد من أن هذه الصفحات موجودة فعلاً في موقعك، وإلا يمكنك حذف هذا الجزء
+for page in ['/privacy.html', '/terms.html', '/contact.html']:
+    xml_content += f"""  <url>
+    <loc>{base_url}{page}</loc>
+    <lastmod>{date_today}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>\n"""
+
+# 5. إغلاق ملف الـ XML
+xml_content += '</urlset>'
+
+# 6. حفظ الملف
+with open('sitemap.xml', 'w', encoding='utf-8') as f:
+    f.write(xml_content)
+
+print("✅ sitemap.xml has been created successfully!")
